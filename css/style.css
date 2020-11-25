@@ -1,15 +1,20 @@
 body{
     margin: 0 auto;
     padding: 0;
+    transition: .5s;
 }
 /*  */
 header{
     background: url('../img/cos.jpg') center/cover no-repeat;
     height: 100vh;
+    transition: .5s;
+}
+marquee{
+    width: 100%;
 }
 .nav{
     display: inline-flex;
-    width: 35%;
+    width: auto;
     color: white;
 }
 .nav ol{
@@ -24,6 +29,7 @@ header{
 }
 .banner_text{
     text-align: center;
+    transition: .5s;
 }
 .banner_text h1{
     color: gold;
@@ -53,6 +59,7 @@ button a{
 /* main */
 /* nasa_img */
 main{
+    transition: .5s;
     padding: 5% 3%;
 }
 .nasa_img{
@@ -77,11 +84,23 @@ main{
     padding: 10px;
     padding-top: auto;
     flex-direction: column;
+    position: relative;
 }
 .space h1{
     color: white;
+    margin-top: 140%;
+    transition: .5s;
+}
+.space:hover h1{
+    margin: 0;
+}
+.space_text{
+    color: white;
+    position: absolute;
+    bottom: 10%;
 }
 .space{
+    transition: .5s;
     margin: 0 auto;
 }
 .space1{
@@ -93,6 +112,10 @@ main{
 .space3{
     background: url('../img/3.png') center/cover no-repeat;
 }   
+.a_mi{
+    color: white;
+    text-decoration: none;
+}
 .space_back_text p{
     color: white;
 }
@@ -252,5 +275,8 @@ footer a i{
 @media screen and (max-width:575px){
     .banner_text p{
         font-size: 15px;
+    }
+    .banner_text button:hover{
+        width: 40%;
     }
 }
